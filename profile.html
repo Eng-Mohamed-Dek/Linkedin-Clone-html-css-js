@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedn Clone</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!------------- Navbar ------------>
+<nav class="navbar">
+    
+    <!------------- Navbar left ------------>
+    <div class="navbar-left">
+        <a href="index.html"><img src="images/logo.png" class="logo"></a>
+        
+        <div class="search-box">
+            <img src="images/search.png" alt="">
+            <input type="text" placeholder="Search">
+        </div>
+        
+    </div>
+    
+    <!------------- Navbar center ------------>
+    <div class="navbar-center">
+        <ul>
+            <li><a href="#" class="active-link"><img src="images/home.png"> <span>Home</span></a></li>
+            <li><a href="#"><img src="images/network.png"> <span>My Network</span></a></li>
+            <li><a href="#"><img src="images/jobs.png"> <span>Jobs</span></a></li>
+                <li><a href="#"><img src="images/notification.png"> <span>Notifications</span></a></li>
+            </ul>
+        </div>
+
+    <!------------- Navbar right------------>
+        <div class="navbar-right">
+            <div class="online">
+                <img onclick="toggleMenu()" src="images/user-1.png" class="nav-profile-img">
+            </div>
+        </div>
+
+        <!-------------- profile-drop-down-menu -------------------->
+        <div class="profile-menu-wrap" id="profile">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-1.png" >
+                    <div>
+                        <h3>Mohamed Dek Dalmar</h3>
+                        <a href="profile.html">see your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png" alt="">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png" alt="">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png" alt="">
+                    <p>Help and Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png" alt="">
+                    <p>Display and Accessiblity</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png" alt="">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+
+    </nav>
+    <!-------------- Navbar Close -------------------->
+
+
+    <!---------- Linkedin Profile Page ----------->
+    <div class="container">
+        
+        <!---------- Profile Main ----------->
+        <div class="profile-main">
+            <div class="profile-container">
+                <img src="images/cover-pic.png" width="100%">
+                <div class="profile-container-inner">
+                    <img src="images/user-1.png" class="profile-pic">
+                    <h1>Mohamed Dek Dalmar</h1>
+                    <b>Web Developer at Gellebashir Academy</b>
+                    <p>Mogadisho, Somalia &middot; <a href="#">Contact Info</a></p>
+
+                    <!-- matual connection  -->
+                    <div class="matual-connection">
+                        <img src="images/user-2.png" >
+                        <span>1 matual connection: Ali Daahir</span>
+                    </div>
+
+                    <!-- profile button -->
+                    <div class="profile-btn">
+                        <a href="#" class="primary-btn"><img src="images/connect.png" alt="">Connect</a>
+                        <a href="#"><img src="images/chat.png" alt="">Message</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- profile description -->
+             <div class="profile-description">
+                <h2>About Us</h2>
+                <p>The success of every websites depends on search engine opitmisation and digital marketing strategy. If your are on first page of all major search engines then you are ahead among your competitors</p>
+                <a href="#" class="see-more-link">See more...</a>
+             </div>
+
+            <!-- profile description -->
+            <div class="profile-description">
+                <h2>Experience</h2>
+                <div class="profile-desc-row">
+                    <img src="images/microsoft.png" alt="">
+                    <div>
+                        <h3>Lead Front-end Developer</h3>
+                        <b>Microsoft &middot; Full-time</b>
+                        <b>Feb 2024 &middot; 2.5 years</b>
+                        <p>Computer Programming is the process of performing a particular computations, usually by designing and building an executable computer program</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="profile-desc-row">
+                    <img src="images/slack.png" alt="">
+                    <div>
+                        <h3>FUllstacK Developer</h3>
+                        <b>Slack &middot; Part-time</b>
+                        <b>Feb 2021 &middot; 1.5 years</b>
+                        <p>Computer Programming is the process of performing a particular computations, usually by designing and building an executable computer program</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="profile-desc-row">
+                    <img src="images/google.png" alt="">
+                    <div>
+                        <h3>System Developer</h3>
+                        <b>Google &middot; Full-time</b>
+                        <b>Feb 2018 &middot; 5 years</b>
+                        <p>Computer Programming is the process of performing a particular computations, usually by designing and building an executable computer program</p>
+                    </div>
+                </div>
+
+                <hr>
+                <a href="#" class="experience-link">Show All 7 Experiences <img src="images/right-arrow.png" alt=""></a>
+            </div>
+
+            <!-- profile description -->
+            <div class="profile-description">
+                <h1>Education</h1>
+                <div class="profile-desc-row">
+                    <img src="images/north.png" >
+                <div>
+                    <h3>Northwestern University</h3>
+                    <b>BSEE, Software Engineering</b>
+                    <b>2014 - 2017</b>
+                </div>
+                </div>
+                <hr>
+                <div class="profile-desc-row">
+                    <img src="images/stanford.png" >
+                <div>
+                    <h3>Standford University</h3>
+                    <b>BSEE, Electrical Engineering</b>
+                    <b>2017 - 2022</b>
+                </div>
+                </div>
+                <hr>
+                <div class="profile-desc-row">
+                    <img src="images/mit.png" >
+                <div>
+                    <h3>Senior High School</h3>
+                    <b>BSEE, Electrical Engineering</b>
+                    <b>2022 - 2024</b>
+                </div>
+                </div>
+                <hr>
+            </div>
+
+            <!-- profile description -->
+            <div class="profile-description">
+                <h1>Skills</h1>
+                <a href="#" class="skills-btn">Leadership</a>
+                <a href="#" class="skills-btn">Web Design</a>
+                <a href="#" class="skills-btn">Web Development</a>
+                <a href="#" class="skills-btn">Graphic Design</a>
+                <a href="#" class="skills-btn">Video Editing</a>
+                <a href="#" class="skills-btn">Communications</a>
+                <a href="#" class="skills-btn">UI UX Design</a>
+                <a href="#" class="skills-btn">Planning</a>
+                <a href="#" class="skills-btn">Coding</a>
+                <a href="#" class="skills-btn">Javascript</a>
+                <a href="#" class="skills-btn">Pythong</a>
+                <a href="#" class="skills-btn">Enterprenorship</a>
+            </div>
+
+
+            <!-- profile description -->
+            <div class="profile-description">
+                <h1>Languages</h1>
+                <a href="#" class="language-btn">English</a>
+                <a href="#" class="language-btn">Somali</a>
+                <a href="#" class="language-btn">Arabic</a>
+            </div>
+
+
+        </div>
+
+        <!---------- Profile Sidebar ----------->
+        <div class="profile-sidebar">
+
+            <!----------- sidebar-ads ------------->
+            <div class="sidebar-ad">
+                <small>Ad &middot; &middot; &middot;</small>
+                <p>Master the 12 Rules of Coding</p>
+                <div>
+                    <img src="images/user-1.png">
+                    <img src="images/mi-logo.png">
+                </div>
+                <b>Brand and Demand in Xiamoni</b>
+                <a href="#" class="ad-link">Learn More</a>
+            </div>
+
+             <!----------- sidebar-people ------------->
+             <div class="sidebar-people">
+                 <p>People you may know</p>
+                 
+                 <!----------- active-peoples ------------->
+                <div class="sidebar-people-row">
+                    <img src="images/user-2.png" >
+                    <div>
+                        <h2>Ali Huseen</h2>
+                        <p>Head of Ali Xuseen School</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="images/user-3.png" >
+                    <div>
+                        <h2>Sacdiyo Huseen</h2>
+                        <p>Head of Beautify</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="images/user-4.png" >
+                    <div>
+                        <h2>Queen Natasha</h2>
+                        <p>Head of Comerrce</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="images/user-5.png" >
+                    <div>
+                        <h2>Daadir Jee</h2>
+                        <p>Head of Al Jee College</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="profile-footer">
+        <div class="sidebar-useful-links">
+            <a href="#">About</a>
+            <a href="#">Accessiblity</a>
+            <a href="#">Help Center</a>
+            <a href="#">Privary Policy</a>
+            <a href="#">Advertising</a>
+            <a href="#">Get the App</a>
+            <a href="#">More</a>
+
+            <div class="copyright-msg">
+                <img src="images/logo.png" alt="">
+                <p>linkedin &copy; 2024 All right reseverd.</p>
+            </div>
+        </div>
+    </div>
+
+  
+
+
+    <!-- javascript file linked  -->
+    <script src="script.js"></script>
+
+</body>
+</html>

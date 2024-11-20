@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedn Clone</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!------------- Navbar ------------>
+<nav class="navbar">
+    <!------------- Navbar left ------------>
+    <div class="navbar-left">
+        <a href="index.html"><img src="images/logo.png" class="logo"></a>
+        
+        <div class="search-box">
+            <img src="images/search.png" alt="">
+            <input type="text" placeholder="Search">
+        </div>
+        
+    </div>
+    
+    <!------------- Navbar center ------------>
+    <div class="navbar-center">
+        <ul>
+            <li><a href="#" class="active-link"><img src="images/home.png"><span>Home</span></a></li>
+            <li><a href="#"><img src="images/network.png"> <span>My Network</span></a></li>
+            <li><a href="#"><img src="images/jobs.png"> <span>Jobs</span></a></li>
+            <li><a href="#"><img src="images/notification.png"> <span>Notifications</span></a></li>
+            </ul>
+    </div>
+
+    <!------------- Navbar right------------>
+        <div class="navbar-right">
+            <div class="online">
+                <img onclick="toggleMenu()" src="images/user-1.png" class="nav-profile-img">
+            </div>
+        </div>
+
+        <!-------------- profile-drop-down-menu -------------------->
+        <div class="profile-menu-wrap" id="profile">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-1.png" >
+                    <div>
+                        <h3>Mohamed Dek Dalmar</h3>
+                        <a href="profile.html">see your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png" alt="">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png" alt="">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png" alt="">
+                    <p>Help and Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png" alt="">
+                    <p>Display and Accessiblity</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png" alt="">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+</nav>
+    <!-------------- Navbar Close -------------------->
+
+    <!------- Linkedin Home Page ----------->
+    <div class="container">
+    <!----------- left-sidebar ---------->
+    <div class="left-sidebar">
+        
+        <!----------- profile-box ---------->
+        <div class="sidebar-profile-box">
+            <img src="images/cover-pic.png" width="100%">
+            <div class="sidebar-profile-info">
+                <img src="images/user-1.png" alt="">
+                <h1>Mohamed Dek Dalmar</h1>
+                <h3>Developer at Gellebashir Academy</h3>
+                <ul>
+                    <li>Your profile view <span>52</span></li>
+                    <li>Your post view <span>810</span></li>
+                    <li>Your connections<span>205</span></li>
+                </ul>
+            </div>
+
+            <!----------- profile-links ---------->
+            <div class="sidebar-profile-link">
+                <a href="#"><img src="images/items.png">My items</a>
+                <a href="#"><img src="images/premium.png">Try Premium</a>
+            </div>
+
+            <!----------- profile-links ---------->
+            <div class="sidebar-activity" id="sidebarActivity">
+                <h3>RECENT</h3>
+                <a href="#"><img src="images/recent.png"> Web Development</a>
+                <a href="#"><img src="images/recent.png"> User Interface</a>
+                <a href="#"><img src="images/recent.png"> Online Learning</a>
+                <a href="#"><img src="images/recent.png"> Code Better</a>
+                <a href="#"><img src="images/recent.png"> Group Learning</a>
+                <h3>GROUPS</h3>
+                <a href="#"><img src="images/group.png"> Web Design</a>
+                <a href="#"><img src="images/group.png"> HTML & CSS Learners</a>
+                <a href="#"><img src="images/group.png"> Python & javascript Group</a>
+                <a href="#"><img src="images/group.png"> Somali Developers </a>
+                <h3>HASHRAG</h3>
+                <a href="#"><img src="images/hashtag.png"> webdevelopment</a>
+                <a href="#"><img src="images/hashtag.png"> userinterface</a>
+                <a href="#"><img src="images/hashtag.png"> onlinecoding</a>
+                <div class="discover-more-link">
+                    <a href="#">Discover more</a>
+                </div>
+            </div>
+        </div>
+
+        <p id="showMoreLink" onclick="showMore()">Show more <b>+</b></p>
+    </div>
+
+    <!----------- main content ------------->
+    <div class="main-content">
+        
+        <!----------- create post ------------->
+        <div class="create-post">
+            <div class="create-post-input">
+                <img src="images/user-1.png" alt="">
+                <textarea rows="2" placeholder="Write a post"></textarea>
+            </div>
+            <div class="create-post-links">
+                <li><img src="images/photo.png">Photo</li>
+                <li><img src="images/video.png">Video</li>
+                <li><img src="images/event.png">Event</li>
+                <li>Post</li>
+            </div>
+        </div>
+        
+        <!----------- sort by ------------->
+        <div class="sort-by">
+            <hr>
+            <p>Sort by: <span>top <img src="images/down-arrow.png"></span></p>
+        </div>
+        
+        
+        <!----------- posts section ------------->
+
+        <!-- first post  -->
+        <div class="post">
+            <div class="post-author">
+                <img src="images/user-2.png" >
+                <div>
+                    <h2>Axmed Xuseen Cali</h2>
+                    <small>Founder and Ceo at Gellelio Group | Angela Investor</small>
+                    <small>1 hour ago</small>
+                </div>
+            </div>
+
+            <!-- post content  -->
+            <p>The success of every websites depends on search engine opitmisation and digital.</p>
+            <img src="images/post-image-1.png" width="100%">
+
+            <!-- reactions section -->
+            <div class="post-stats">
+                <div>
+                    <img src="images/thumbsup.png" alt="">
+                    <img src="images/love.png" alt="">
+                    <img src="images/clap.png" alt="">
+                    <span class="liked-users">faadumo mohamed and 15 others</span>
+                </div>
+                <div>
+                    <span>100 comments &middot; 20 shares</span>
+                </div>
+            </div>
+            
+            <!-- post-activity -->
+            <div class="post-activity">
+                <div>
+                    <img src="images/user-2.png" class="post-activity-user-icon">
+                    <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div>
+                    <img src="images/like.png" class="post-activity-link">
+                    <span>like</span>
+                </div>
+                <div>
+                    <img src="images/comment.png" class="post-activity-link">
+                    <span>Comment</span>
+                </div>
+                <div>
+                    <img src="images/share.png" class="post-activity-link">
+                    <span>Share</span>
+                </div>
+                <div>
+                    <img src="images/send.png" class="post-activity-link">
+                    <span>Send</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- second post  -->
+        <div class="post">
+            <div class="post-author">
+                <img src="images/user-3.png" >
+                <div>
+                    <h2>Farxiyo Mohamed</h2>
+                    <small>Founder and Ceo at Gellelio Group | Angela Investor</small>
+                    <small>2 hour ago</small>
+                </div>
+            </div>
+
+            <!-- post content  -->
+            <p>The success of every websites depends on search engine opitmisation and digital marketing strategy. If your are on first page of all major search engines then you are ahead among your competitors</p>
+            <img src="images/post-image-2.png" width="100%">
+
+            <!-- reactions section -->
+            <div class="post-stats">
+                <div>
+                    <img src="images/thumbsup.png" alt="">
+                    <img src="images/love.png" alt="">
+                    <img src="images/clap.png" alt="">
+                    <span class="liked-users">Abdiraxmaan Xuseen and 175 others</span>
+                </div>
+                <div>
+                    <span>212 comments &middot; 74 shares</span>
+                </div>
+            </div>
+            
+            <!-- post-activity -->
+            <div class="post-activity">
+                <div>
+                    <img src="images/user-3.png" class="post-activity-user-icon">
+                    <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div>
+                    <img src="images/like.png" class="post-activity-link">
+                    <span>like</span>
+                </div>
+                <div>
+                    <img src="images/comment.png" class="post-activity-link">
+                    <span>Comment</span>
+                </div>
+                <div>
+                    <img src="images/share.png" class="post-activity-link">
+                    <span>Share</span>
+                </div>
+                <div>
+                    <img src="images/send.png" class="post-activity-link">
+                    <span>Send</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- third post  -->
+        <div class="post">
+            <div class="post-author">
+                <img src="images/user-4.png" >
+                <div>
+                    <h2>Queen Natasha</h2>
+                    <small>Founder and Ceo at Gellelio Group | Angela Investor</small>
+                    <small>2 hour ago</small>
+                </div>
+            </div>
+
+            <!-- post content  -->
+            <p>The success of buildings in Mogadisho is way more than we expected to do but alot of companies are still trying now.</p>
+            <img src="images/post-image-3.png" width="100%">
+
+            <!-- reactions section -->
+            <div class="post-stats">
+                <div>
+                    <img src="images/thumbsup.png" alt="">
+                    <img src="images/love.png" alt="">
+                    <img src="images/clap.png" alt="">
+                    <span class="liked-users">sacdiyo mohamed and 75 others</span>
+                </div>
+                <div>
+                    <span>22 comments &middot; 40 shares</span>
+                </div>
+            </div>
+            
+            <!-- post-activity -->
+            <div class="post-activity">
+                <div>
+                    <img src="images/user-4.png" class="post-activity-user-icon">
+                    <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div>
+                    <img src="images/like.png" class="post-activity-link">
+                    <span>like</span>
+                </div>
+                <div>
+                    <img src="images/comment.png" class="post-activity-link">
+                    <span>Comment</span>
+                </div>
+                <div>
+                    <img src="images/share.png" class="post-activity-link">
+                    <span>Share</span>
+                </div>
+                <div>
+                    <img src="images/send.png" class="post-activity-link">
+                    <span>Send</span>
+                </div>
+            </div>
+
+        </div>
+        
+
+        <!-- fourth post  -->
+        <div class="post"> 
+            <div class="post-author">
+                <img src="images/user-5.png" >
+                <div>
+                    <h2>Farxaan Mohamed</h2>
+                    <small>Founder and Ceo at Gellelio Group | Angela Investor</small>
+                    <small>2 hour ago</small>
+                </div>
+            </div>
+
+            <!-- post content  -->
+            <p>The best country to live analysis.</p>
+            <img src="images/post-image-4.png" width="100%">
+
+            <!-- reactions section -->
+            <div class="post-stats">
+                <div>
+                    <img src="images/thumbsup.png" alt="">
+                    <img src="images/love.png" alt="">
+                    <img src="images/clap.png" alt="">
+                    <span class="liked-users">Farxaan Ali and 75 others</span>
+                </div>
+                <div>
+                    <span>22 comments &middot; 40 shares</span>
+                </div>
+            </div>
+            
+            <!-- post-activity -->
+            <div class="post-activity">
+                <div>
+                    <img src="images/user-4.png" class="post-activity-user-icon">
+                    <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div>
+                    <img src="images/like.png" class="post-activity-link">
+                    <span>like</span>
+                </div>
+                <div>
+                    <img src="images/comment.png" class="post-activity-link">
+                    <span>Comment</span>
+                </div>
+                <div>
+                    <img src="images/share.png" class="post-activity-link">
+                    <span>Share</span>
+                </div>
+                <div>
+                    <img src="images/send.png" class="post-activity-link">
+                    <span>Send</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!----------- right-sidebar ------------->
+    <div class="right-sidebar">
+
+        <!----------- sidebar-news ------------->
+        <div class="sidebar-news">
+            <img src="images/more.png" class="info-icon">
+            <h3>Trending News</h3>
+            <a href="#">High deman for skilled manpower</a>
+            <span>1d ago &middot; 3,453 readers</span>
+            
+            <a href="#">Carres growing horizontally too</a>
+            <span>19h ago &middot; 1,503 readers</span>
+            
+            <a href="#">Less work vise for US, more for UK</a>
+            <span>1d ago &middot; 49,453 readers</span>
+
+            <a href="#">Senior Developer Inform Others to Coding</a>
+            <span>3d ago &middot; 5,153 readers</span>
+            <a href="#" class="read-more-link">Read more</a>
+        </div>
+        
+        <!----------- sidebar-ads ------------->
+        <div class="sidebar-ad">
+            <small>Ad &middot; &middot; &middot;</small>
+            <p>Master the 12 Rules of Coding</p>
+            <div>
+                <img src="images/user-1.png">
+                <img src="images/mi-logo.png">
+            </div>
+            <b>Brand and Demand in Xiamoni</b>
+            <a href="#" class="ad-link">Learn More</a>
+        </div>
+        
+        <!----------- sidebar-usefull links ------------->
+        <div class="sidebar-useful-links">
+            <a href="#">About</a>
+            <a href="#">Accessiblity</a>
+            <a href="#">Help Center</a>
+            <a href="#">Privary Policy</a>
+            <a href="#">Advertising</a>
+            <a href="#">Get the App</a>
+            <a href="#">More</a>
+
+            <div class="copyright-msg">
+                <img src="images/logo.png" alt="">
+                <p>linkedin &copy; 2024 All right reseverd.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <!-- javascript file linked  -->
+    <script src="script.js"></script>
+
+</body>
+</html>
